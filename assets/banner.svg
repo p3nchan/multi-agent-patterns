@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340">
+  <defs>
+    <style>
+      text { font-family: 'Courier New', 'SF Mono', 'Menlo', 'Consolas', monospace; }
+    </style>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#d4af55" stroke-width="0.3" opacity="0.07"/>
+    </pattern>
+    <filter id="glow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <radialGradient id="vignette" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#181614" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.4"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="340" fill="#181614"/>
+  <rect width="1200" height="340" fill="url(#grid)"/>
+  <rect width="1200" height="340" fill="url(#vignette)"/>
+
+  <!-- Top gold accent line -->
+  <rect x="0" y="0" width="1200" height="3" fill="#d4af55" opacity="0.8"/>
+
+  <!-- Left gold bar -->
+  <rect x="60" y="80" width="4" height="120" fill="#d4af55" opacity="0.9"/>
+
+  <!-- Title -->
+  <text x="80" y="120" fill="#f5f0e8" font-size="42" font-weight="bold" letter-spacing="1">Multi-Agent</text>
+  <text x="80" y="170" fill="#d4af55" font-size="42" font-weight="bold" letter-spacing="1">Patterns</text>
+
+  <!-- Subtitle -->
+  <text x="82" y="210" fill="#504840" font-size="16">A practical pattern catalog for multi-agent AI orchestration</text>
+
+  <!-- Orchestrator node (center-right) -->
+  <circle cx="720" cy="170" r="22" fill="#d4af55" opacity="0.9"/>
+  <text x="714" y="176" fill="#181614" font-size="14" font-weight="bold">O</text>
+
+  <!-- Agent nodes with connections -->
+  <!-- Agent A (top-left) -->
+  <line x1="720" y1="170" x2="600" y2="90" stroke="#504840" stroke-width="1.5"/>
+  <circle cx="600" cy="90" r="14" fill="none" stroke="#c66c52" stroke-width="1.5"/>
+  <text x="596" y="95" fill="#c66c52" font-size="11">A</text>
+
+  <!-- Agent B (bottom-left) -->
+  <line x1="720" y1="170" x2="600" y2="250" stroke="#504840" stroke-width="1.5"/>
+  <circle cx="600" cy="250" r="14" fill="none" stroke="#c66c52" stroke-width="1.5"/>
+  <text x="596" y="255" fill="#c66c52" font-size="11">B</text>
+
+  <!-- Agent C (top-right) -->
+  <line x1="720" y1="170" x2="840" y2="90" stroke="#504840" stroke-width="1.5"/>
+  <circle cx="840" cy="90" r="14" fill="none" stroke="#529e94" stroke-width="1.5"/>
+  <text x="836" y="95" fill="#529e94" font-size="11">C</text>
+
+  <!-- Agent D (bottom-right) -->
+  <line x1="720" y1="170" x2="840" y2="250" stroke="#504840" stroke-width="1.5"/>
+  <circle cx="840" cy="250" r="14" fill="none" stroke="#529e94" stroke-width="1.5"/>
+  <text x="836" y="255" fill="#529e94" font-size="11">D</text>
+
+  <!-- Cross-connections (peer dialogue) -->
+  <line x1="600" y1="90" x2="840" y2="90" stroke="#302c28" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="600" y1="250" x2="840" y2="250" stroke="#302c28" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- Data flow dots -->
+  <circle cx="660" cy="130" r="3" fill="#c66c52" opacity="0.6"/>
+  <circle cx="780" cy="130" r="3" fill="#529e94" opacity="0.6"/>
+  <circle cx="660" cy="210" r="3" fill="#c66c52" opacity="0.6"/>
+  <circle cx="780" cy="210" r="3" fill="#529e94" opacity="0.6"/>
+
+  <!-- Sub-agent satellites -->
+  <circle cx="555" cy="60" r="4" fill="#504840" opacity="0.5"/>
+  <circle cx="555" cy="280" r="4" fill="#504840" opacity="0.5"/>
+  <circle cx="885" cy="60" r="4" fill="#504840" opacity="0.5"/>
+  <circle cx="885" cy="280" r="4" fill="#504840" opacity="0.5"/>
+
+  <!-- Right side: Pattern tags -->
+  <rect x="940" y="80" rx="3" ry="3" width="80" height="22" fill="none" stroke="#d4af55" stroke-width="1" opacity="0.8"/>
+  <text x="958" y="96" fill="#d4af55" font-size="11">panel</text>
+
+  <rect x="1030" y="80" rx="3" ry="3" width="110" height="22" fill="none" stroke="#d4af55" stroke-width="1" opacity="0.8"/>
+  <text x="1045" y="96" fill="#d4af55" font-size="11">tournament</text>
+
+  <rect x="940" y="112" rx="3" ry="3" width="80" height="22" fill="none" stroke="#504840" stroke-width="1"/>
+  <text x="955" y="128" fill="#504840" font-size="11">debate</text>
+
+  <rect x="1030" y="112" rx="3" ry="3" width="100" height="22" fill="none" stroke="#504840" stroke-width="1"/>
+  <text x="1045" y="128" fill="#504840" font-size="11">pipeline</text>
+
+  <rect x="940" y="144" rx="3" ry="3" width="90" height="22" fill="none" stroke="#504840" stroke-width="1"/>
+  <text x="952" y="160" fill="#504840" font-size="11">watchdog</text>
+
+  <rect x="1040" y="144" rx="3" ry="3" width="70" height="22" fill="none" stroke="#504840" stroke-width="1"/>
+  <text x="1055" y="160" fill="#504840" font-size="11">relay</text>
+
+  <!-- Stats -->
+  <text x="940" y="220" fill="#504840" font-size="12">8 patterns</text>
+  <text x="940" y="240" fill="#504840" font-size="12">4 templates</text>
+  <text x="940" y="260" fill="#504840" font-size="12">10-agent review</text>
+
+  <!-- Author -->
+  <text x="82" y="300" fill="#504840" font-size="13">penchan.co/penna</text>
+
+  <!-- Bottom accent -->
+  <rect x="0" y="337" width="1200" height="3" fill="#d4af55" opacity="0.3"/>
+</svg>

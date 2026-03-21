@@ -1,4 +1,7 @@
-# Multi-Agent Orchestration Patterns
+<div align="center">
+  <img src="assets/banner.svg" width="100%" alt="Multi-Agent Patterns"/>
+  <br/><br/>
+</div>
 
 > A practical pattern catalog for multi-agent AI systems. Not a framework — a reference for designing agent collaboration, regardless of your stack.
 
