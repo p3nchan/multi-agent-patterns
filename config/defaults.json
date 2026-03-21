@@ -1,0 +1,36 @@
+{
+  "modes": {
+    "panel": {
+      "default_expert_count": 3,
+      "max_expert_count": 5,
+      "default_model": "opus",
+      "budget_usd": 3.00,
+      "timeout_minutes": 10,
+      "rounds": 1
+    },
+    "tournament": {
+      "default_models": ["claude-opus", "gpt-5"],
+      "max_models": 4,
+      "budget_usd": 3.00,
+      "timeout_minutes": 5,
+      "rounds": 1,
+      "judge": "orchestrator",
+      "blind_judging": true
+    },
+    "debate": {
+      "status": "deferred",
+      "trigger": "Panel single-round produces documented bad decision",
+      "default_rounds": 3,
+      "default_model": "opus"
+    }
+  },
+  "global": {
+    "max_concurrent_agents": 3,
+    "auto_trigger_enabled": true,
+    "auto_trigger_max_per_session": 2,
+    "cost_notify_threshold_usd": 1.00,
+    "cost_gate_threshold_usd": 5.00,
+    "result_dir": "tmp",
+    "result_ttl_days": 3
+  }
+}
