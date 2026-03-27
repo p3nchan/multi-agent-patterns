@@ -1,9 +1,12 @@
-<div align="center">
-  <img src="assets/banner.svg" width="100%" alt="Multi-Agent Patterns"/>
-  <br/><br/>
-</div>
+<p align="center">
+  <img src="assets/banner.webp" alt="Multi-Agent Patterns" width="100%">
+</p>
 
-> A practical pattern catalog for multi-agent AI systems. Not a framework — a reference for designing agent collaboration, regardless of your stack.
+# Multi-Agent Patterns
+
+> **🐧 中文網頁版** — *coming soon on [penchan.co](https://penchan.co)*
+
+A practical pattern catalog for multi-agent AI systems. Not a framework — a reference for designing agent collaboration, regardless of your stack.
 
 **Author**: [Penna](https://penchan.co) | **License**: MIT
 
@@ -20,6 +23,8 @@ Every pattern includes:
 - Cost profile
 - Failure modes
 - What we learned from actually evaluating it
+
+<img src="assets/sections/patterns.webp" alt="Patterns" width="100%">
 
 ## The Patterns
 
@@ -83,6 +88,8 @@ This catalog was shaped by a 10-agent cross-model design review:
 The full decision record is in [`decisions/`](decisions/). The most important finding:
 
 > "No current project was blocked by lack of multi-agent orchestration. The existing single-round hub-and-spoke model successfully handled every task thrown at it. Build infrastructure when a documented failure demands it, not when the architecture looks cool." — Skeptic Agent
+
+<img src="assets/sections/anti-patterns.webp" alt="Anti-Patterns" width="100%">
 
 ## Anti-Patterns (from the review)
 
